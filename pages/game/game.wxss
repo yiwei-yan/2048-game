@@ -1,0 +1,265 @@
+/* pages/game/game.wxss */
+page{
+    font-family: Microsoft Yahei;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  padding: 60rpx 0;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  text-align: center;
+  padding-left: 15rpx;
+  font-size: 20rpx;
+  width: 140rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scoreinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 128rpx;
+  width: 200rpx;
+  margin: 20rpx 10rpx 20rpx 100rpx;
+  border-radius: 10rpx;
+  background-color: #ccc;
+}
+
+.bestinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 128rpx;
+  width: 200rpx;
+  margin: 20rpx 10rpx;
+  border-radius: 10rpx;
+  background-color: #ccc;
+}
+
+.scoretext {
+  margin-top: 15rpx;
+  color: #fff6ec;
+  font-size: 30rpx;
+  font-weight: bold;
+  font-family: "Helvetica Neue",
+                 Helvetica,
+                 Microsoft Yahei,
+                 Hiragino Sans GB,
+                 WenQuanYi Micro Hei,
+                 sans-serif;
+}
+
+.score {
+  color: #fff;
+  font-size: 50rpx;
+  font-weight: bold;
+  font-family: "Helvetica Neue",
+                 Helvetica,
+                 Microsoft Yahei,
+                 Hiragino Sans GB,
+                 WenQuanYi Micro Hei,
+                 sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.staticbox {
+  background: #000;
+  width: 750rpx;
+  height: 750rpx;
+  display: flex;
+  z-index: 20;
+  opacity: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25rpx;
+  border-radius: 10rpx;
+  width: 680rpx;
+  height: 680rpx;
+  background: #ddd;
+  margin-top: -715rpx;
+  z-index: 10;
+}
+
+.backgroundbox {
+  background-color: #e4eceb;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Helvetica Neue",
+                 Helvetica,
+                 Microsoft Yahei,
+                 Hiragino Sans GB,
+                 WenQuanYi Micro Hei,
+                 sans-serif;
+  background-color: #dffdff;
+  margin: 15rpx;
+  border-radius: 5rpx;
+  width: 140rpx;
+  height: 140rpx;
+}
+
+@keyframes warn {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.boxs-2 {
+  background: #fff6ec;
+  color: #aaa;
+  font-size: 2rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-4 {
+  background: #c2ffe2;
+  color: #aaa;
+  font-size: 2rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-8 {
+  background: #ffdab9;
+  color: #fff;
+  font-size: 2rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-16 {
+  background: #f2bb97;
+  color: #fff;
+  font-size: 1.8rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-32 {
+  background: #f09e7f;
+  color: #fff;
+  font-size: 1.8rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-64 {
+  background: #d08062;
+  color: #fff;
+  font-size: 1.8rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-128 {
+  background: #f2c778;
+  color: #fff;
+  font-size: 1.6rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-256 {
+  background: #e0b15c;
+  color: #fff;
+  font-size: 1.6rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-512 {
+  background: #d7bf42;
+  color: #fff;
+  font-size: 1.6rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-1024 {
+  background: #f7f77e;
+  color: #fff;
+  font-size: 1.4rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+
+.boxs-2048 {
+  background: #f0f02d;
+  color: #fff;
+  font-size: 1.4rem;
+  -webkit-animation: warn 0.5s ease-out;
+  animation: warn 0.5s ease-out;
+}
+.wx-modal-dialog{
+ background:transparent !important;
+}
+.wx-modal-btn-default{
+  background: #ffdab9 !important;
+  color: #fff !important;
+}
+.wx-modal-btn-primary{
+  background: #f2bb97 !important;
+  color: #fff !important;
+}
+.modalImage{
+  width: 100%;
+  text-align: center;
+}
+.restart{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 40rpx 0;
+}
+.restart image{
+  width: 80rpx;
+  height: 80rpx;
+}

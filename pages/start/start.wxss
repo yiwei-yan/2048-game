@@ -1,0 +1,17 @@
+page{
+    background-color:#55417b;
+    font-family: Microsoft Yahei;
+    letter-spacing: 15rpx;
+}
+.container{
+    width: 100%;
+}
+.container image{
+    width: 100%;
+}
+.newGame{
+    margin-top: 100rpx;
+    width: 300rpx;
+    background: rgb(255, 233, 87);
+    color: #55417b;
+}

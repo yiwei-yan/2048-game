@@ -1,0 +1,32 @@
+<view class="info">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="scoreinfo">
+    <text class="scoretext">当前分数</text>
+    <text class="score">{{currentScore}}</text>
+  </view>
+  <view class="bestinfo">
+    <text class="scoretext">历史最高</text>
+    <text class="score">{{bestScore}}</text>
+  </view>
+</view>
+<view class="container">
+  <canvas class="staticbox" canvas-id="game" disable-scroll="true" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
+  <view class="box">
+    <view animation="{{item ? animationData : '' }}" class="boxs boxs-{{item}}" wx:for="{{boxs}}">
+      {{item ? item : ''}}
+    </view>
+  </view>
+</view>
+<view class="restart">
+    <image class="modalImage" src="../../images/restart.png" mode="aspectFit" bindtap="restartGame" animation="{{animation}}"></image>
+</view>
+<!--<view>
+  <modal title="" hidden="{{modalHidden}}" confirm-text="再来一局" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+    <image class="modalImage" src="../../images/gameover.png" mode="aspectFit"></image>
+  </modal>
+</view>-->
+
+

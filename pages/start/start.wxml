@@ -1,0 +1,4 @@
+<view class="container">
+    <image src="../../images/2048.jpg" mode="widthFix"></image>
+    <button class="newGame" type="default" bindtap="startGame">新游戏</button>
+</view>
